@@ -1,26 +1,23 @@
-import { Check, Flame, Zap } from 'lucide-react';
+import { Check, Flame } from 'lucide-react';
 
 const tiers = [
   {
-    name: 'Starter',
-    price: '$0.99',
-    diamonds: '14 Diamonds',
+    name: '14 Diamonds',
+    price: 'Rp 3.500',
     highlight: false,
-    perks: ['Fast delivery', 'Official channel', 'Email receipt'],
+    perks: ['Pengiriman cepat', 'Channel resmi', 'E-struk langsung'],
   },
   {
-    name: 'Pro',
-    price: '$4.99',
-    diamonds: '86 Diamonds',
+    name: '86 Diamonds',
+    price: 'Rp 20.000',
     highlight: true,
-    perks: ['Priority delivery', 'Best value', '24/7 support'],
+    perks: ['Prioritas pengiriman', 'Best value', 'Dukungan 24/7'],
   },
   {
-    name: 'Elite',
-    price: '$24.99',
-    diamonds: '514 Diamonds',
+    name: '514 Diamonds',
+    price: 'Rp 120.000',
     highlight: false,
-    perks: ['VIP queue', 'Premium support', 'Exclusive offers'],
+    perks: ['Antrian VIP', 'Support premium', 'Promo eksklusif'],
   },
 ];
 
@@ -31,12 +28,12 @@ export default function Pricing() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-fuchsia-400/30 bg-fuchsia-400/10 px-3 py-1 text-xs text-fuchsia-200/90">
-            <Flame size={14} /> Popular Packs
+            <Flame size={14} /> Paket Populer
           </span>
           <h2 className="mt-4 bg-gradient-to-br from-white to-white/70 bg-clip-text text-3xl font-semibold text-transparent sm:text-4xl">
-            Choose your diamond top-up
+            Pilih paket top up
           </h2>
-          <p className="mt-2 text-white/60">Instant top-up for MLBB and more. No login required — we use your Player ID and Server.</p>
+          <p className="mt-2 text-white/60">Top up instan untuk MLBB. Tanpa login — cukup ID & Server.</p>
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -46,14 +43,10 @@ export default function Pricing() {
               className={`relative rounded-2xl border ${t.highlight ? 'border-white/30 bg-white/5' : 'border-white/10 bg-white/5'} p-6 shadow-lg backdrop-blur transition hover:border-white/30`}
             >
               {t.highlight && (
-                <div className="absolute -top-3 right-4 inline-flex items-center gap-1 rounded-full bg-white px-2 py-1 text-[10px] font-semibold text-gray-900 shadow">BEST VALUE</div>
+                <div className="absolute -top-3 right-4 inline-flex items-center gap-1 rounded-full bg-white px-2 py-1 text-[10px] font-semibold text-gray-900 shadow">PALING HEMAT</div>
               )}
-              <div className="flex items-center justify-between">
-                <h3 className="text-lg font-medium text-white">{t.name}</h3>
-                <Zap className="text-cyan-300" size={18} />
-              </div>
+              <h3 className="text-lg font-medium text-white">{t.name}</h3>
               <p className="mt-2 text-3xl font-semibold text-white">{t.price}</p>
-              <p className="text-sm text-white/60">{t.diamonds}</p>
               <ul className="mt-4 space-y-2 text-sm text-white/70">
                 {t.perks.map((p) => (
                   <li key={p} className="flex items-center gap-2">
@@ -61,7 +54,7 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <button className="mt-6 w-full rounded-md bg-white py-2.5 font-medium text-gray-900 transition hover:bg-white/90">Buy now</button>
+              <button className="mt-6 w-full rounded-md bg-white py-2.5 font-medium text-gray-900 transition hover:bg-white/90">Beli sekarang</button>
             </div>
           ))}
         </div>

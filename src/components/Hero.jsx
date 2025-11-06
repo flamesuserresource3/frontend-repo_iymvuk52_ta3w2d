@@ -1,5 +1,5 @@
 import Spline from '@splinetool/react-spline';
-import { Rocket, ShieldCheck } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -12,20 +12,20 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-24 text-center sm:py-32">
         <span className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200/90">
-          <ShieldCheck size={14} /> 100% Trusted Top Up Service
+          Top Up Diamond Resmi MLBB
         </span>
         <h1 className="bg-gradient-to-br from-white via-cyan-100 to-fuchsia-200 bg-clip-text text-4xl font-semibold leading-tight text-transparent sm:text-5xl md:text-6xl">
-          Buy Diamond Mobile Legends Bang Bang
-          <span className="block text-xl font-normal text-white/70 sm:text-2xl">Fast. Secure. Official.</span>
+          Cepat, Aman, Resmi
+          <span className="block text-xl font-normal text-white/70 sm:text-2xl">Layanan top up terpercaya untuk Mobile Legends</span>
         </h1>
         <p className="max-w-2xl text-balance text-white/70">
-          Get instant delivery of diamonds for MLBB and other popular games. Pay safely, receive quickly, and level up your gameplay with confidence.
+          Isi diamond Mobile Legends: Bang Bang secara instan. Pembayaran aman, tanpa login akun game, cukup ID & Server.
         </p>
         <div className="flex flex-col items-center gap-3 sm:flex-row">
           <a href="#packs" className="inline-flex items-center gap-2 rounded-md bg-white px-5 py-3 font-medium text-gray-900 shadow-sm shadow-white/10 transition hover:bg-white/90">
-            <Rocket size={18} /> Explore Diamond Packs
+            <Rocket size={18} /> Lihat Paket Diamond
           </a>
-          <a href="#how" className="rounded-md border border-white/20 px-5 py-3 font-medium text-white/80 transition hover:bg-white/10">How it works</a>
+          <a href="#faq" className="rounded-md border border-white/20 px-5 py-3 font-medium text-white/80 transition hover:bg-white/10">Cara Kerja</a>
         </div>
       </div>
     </section>
