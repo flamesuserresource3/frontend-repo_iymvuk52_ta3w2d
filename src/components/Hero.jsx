@@ -1,31 +1,29 @@
-import Spline from '@splinetool/react-spline';
-import { Rocket } from 'lucide-react';
+import Spline from "@splinetool/react-spline";
+import { Flame, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[90vh] w-full overflow-hidden bg-gradient-to-b from-[#0b0b12] via-[#0a0a14] to-black pt-16">
+    <section id="beranda" className="relative min-h-[70vh] grid place-items-center overflow-hidden">
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/HldEaEeFcKnMlQB3/scene.splinecode" style={{ width: '100%', height: '100%' }} />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_50%_at_50%_30%,rgba(56,189,248,0.25),transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/60" />
+        <Spline scene="https://prod.spline.design/6hA5k6Q2Xq0oSHQv/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
-
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 py-24 text-center sm:py-32">
-        <span className="inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200/90">
-          Top Up Diamond Resmi MLBB
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white pointer-events-none" />
+      <div className="relative max-w-5xl mx-auto px-6 py-20 text-center">
+        <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-rose-600 bg-rose-50 border border-rose-200 rounded-full px-3 py-1 mb-5">
+          <Flame className="h-3.5 w-3.5" /> PokeInfo Indonesia
         </span>
-        <h1 className="bg-gradient-to-br from-white via-cyan-100 to-fuchsia-200 bg-clip-text text-4xl font-semibold leading-tight text-transparent sm:text-5xl md:text-6xl">
-          Cepat, Aman, Resmi
-          <span className="block text-xl font-normal text-white/70 sm:text-2xl">Layanan top up terpercaya untuk Mobile Legends</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1]">
+          Semua Informasi Pokemon dalam Bahasa Indonesia
         </h1>
-        <p className="max-w-2xl text-balance text-white/70">
-          Isi diamond Mobile Legends: Bang Bang secara instan. Pembayaran aman, tanpa login akun game, cukup ID & Server.
+        <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          Cek weakness/kelemahan tiap tipe, lihat Pokemon terbaru, dan baca berita terkini seputar dunia Pokemon. Simple, cepat, dan informatif.
         </p>
-        <div className="flex flex-col items-center gap-3 sm:flex-row">
-          <a href="#packs" className="inline-flex items-center gap-2 rounded-md bg-white px-5 py-3 font-medium text-gray-900 shadow-sm shadow-white/10 transition hover:bg-white/90">
-            <Rocket size={18} /> Lihat Paket Diamond
-          </a>
-          <a href="#faq" className="rounded-md border border-white/20 px-5 py-3 font-medium text-white/80 transition hover:bg-white/10">Cara Kerja</a>
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="#pokedex" className="px-5 py-3 rounded-lg bg-black text-white font-medium shadow hover:shadow-md">Mulai Jelajah Pokedex</a>
+          <a href="#berita" className="px-5 py-3 rounded-lg bg-white border border-gray-200 font-medium shadow-sm hover:shadow">Lihat Berita Terbaru</a>
+        </div>
+        <div className="mt-6 flex items-center justify-center gap-2 text-xs text-gray-500">
+          <ShieldCheck className="h-4 w-4" /> Data dari PokéAPI & sumber resmi
         </div>
       </div>
     </section>
